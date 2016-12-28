@@ -19,17 +19,30 @@ body
 	margin: 10px;
 	
 }
-#geninfo
+.geninfo
 {	
 	/*General information*/
 	width: 220px;
 	height: 110px;
-	border: solid black 3px;
+	border: solid #FAFAFA 3px;
+	box-shadow: 5px grey;
 	position: absolute;
 	top: 140px;
 	left: 400px;
 
 }
+
+.geninfo > *
+{
+	border: solid darkgrey 1px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 5px;
+	margin: 3px;
+	box-shadow: 1px 1px grey;
+}
+
+
 #revclick
 {
 	border: solid beige 1px; 
@@ -51,6 +64,7 @@ body
 }
 .review{
 	display: none;
+	background: lightblue
 	margin: 10px;
 	width: 380px;
 	height: 50px;
@@ -68,6 +82,8 @@ body
 	
 }
 
+
+/* Start of Availability button*/
 #dropav
 {
 	/*The availability 'BUTTON'*/
@@ -140,7 +156,6 @@ body
 
  }
 
-
   td{
  	background: linear-gradient(lightblue,#6E89EF);
  	padding: 8px;
@@ -149,9 +164,9 @@ body
  	align-self: center;
  	box-shadow: 1px 1px grey;
  }
+/* End of Availability Button */
 
-
-.dropdown, #aboutme,#education, #experience 
+#grouped > *
  {
  	/* give the drop down buttons and the boxes  for AboutMe Edu. and Exp. the following stuff*/
  	width: 30%;
@@ -178,31 +193,15 @@ body
 	top: 350px;
 	width: 1000px;
 }
-#aboutme {
+#grouped > .dropped {
     padding: 80px;
     display: none;
     margin: 10px;
     position: relative;
     overflow-y: auto;
     }
-#education {
-    padding: 80px;
-    display: none;
-    margin: 10px;
-    position: relative;
-    overflow-y: auto;
-}
 
-#experience {
-    padding: 80px;
-    margin: 10px;
-    display: none;
-    position: relative;
-    overflow-y: auto
     
-}
-
-
 .vid
 {
 	
