@@ -1,0 +1,80 @@
+<html>
+<head>
+<title> USERS profile </title>
+
+<!--Use own CSS and jQuery-->
+<link rel="stylesheet" href="./style1.css">
+<!--Add icon to title-->
+<link rel="icon" type="image/gif" href="./images/a1c74d6454056e858da827414a347da0-favicon.png">
+<!--Pull jQuery and Bootstrap-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src='./jq.js'></script>
+</head>
+
+
+<body>
+<!-- Create general information element - here will go Name Highest Education Prices etc-->
+<div id='geninfo'>General info</div>
+<!--Create linkedin link with icon-->
+<a id='linkedin' href="https://uk.linkedin.com/pub/sam-georgiou/106/61/726" style="text-decoration:none;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="30" height="22" alt="View Sam Georgiou's LinkedIn profile" style="vertical-align:middle;" border="0"></a>
+
+<!--Add tutor profile pic-->
+<img src='./images/tutpic.jpg' id='tutpic'>
+
+<!-- The Availability Drop Menu-->
+<!--The Availability tab that will always be visibles-->
+
+<div id='revclick'>Reviews
+<div class='review' id='rev1'> Review Number One</div>
+<div class='review' id='rev2'> Review Number 2</div>
+<div class='review' id='rev3'> Review Number 3</div>
+<div class='review' id='rev4'> Review Number 4</div>
+<div class='review' id='rev5'> Review Number 5</div>
+<div class='review' id='rev6'> Review Number 6</div>
+<div class='review' id='rev7'> Review Number 7</div>
+<div class='review' id='rev8'> Review Number 8</div>
+<div class='review' id='rev9'> Review Number 9</div>
+<div class='review' id='rev10'> Review Number 10</div>
+</div>
+<div id='dropav'>Availability</div> 
+
+<table id='availability'>
+<!--The schedule the will be hidden until called-->
+<tr><td class='day' data-did='times1'>Monday</td></tr>
+<tr class='times' id='times1'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times2'>Tuesday</td></tr>
+<tr class='times' id='times2'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times3'>Wednesday</td></tr>
+<tr class='times' id='times3'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times4'>Thursday</td></tr>
+<tr class='times' id='times4'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times5'>Friday</td></tr>
+<tr class='times' id='times5'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times6'>Saturday</td></tr>
+<tr class='times' id='times6'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+<tr><td class='day' data-did='times7'>Sunday</td></tr>
+<tr class='times' id='times7'><td>9am-10am</td><td>10am-11am</td><td>11am-12pm</td><td>12pm-1pm</td><td>1pm-2pm</td></tr>
+</table>
+
+<!--End od availability table-->
+
+<!-- Create elements for About Me, Education, and My Experience which can be CSSed up-->
+<div id="grouped">
+<div class='dropdown' data-dropid="aboutme">About Me</div>
+<div id="aboutme">Here is some text about me</div>
+<div class='dropdown' data-dropid="education">My Education</div>
+<div id="education">Here is some text about my education</div>
+<div class='dropdown' data-dropid="experience">My Experience</div>
+<div id="experience">Here is some text about my experience</div></div>
+
+<!-- Include  the tutor's video-->
+<iframe class='vid' src="https://www.youtube.com/embed/Gcby6WYAVKg" frameborder="0"></iframe>
+
+</body>
+</html>
+
+

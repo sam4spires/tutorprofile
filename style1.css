@@ -1,0 +1,220 @@
+
+body
+{
+	background: #FAFAFA;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+#tutpic
+{
+	/*Tutor profile picture*/
+	background:none;
+	position: absolute;
+	top: 100px;
+	width:180;
+	height:180px;
+	border: #79D1EE solid 3px;
+	border-radius:5px;
+	box-shadow: 5px 0px 5px 0px #97A6AB; 
+	margin: 10px;
+	
+}
+#geninfo
+{	
+	/*General information*/
+	width: 220px;
+	height: 110px;
+	border: solid black 3px;
+	position: absolute;
+	top: 140px;
+	left: 400px;
+
+}
+#revclick
+{
+	border: solid beige 1px; 
+	border-radius: 10px; 
+	background: linear-gradient(lightblue,#6E89EF); 
+	position: relative;
+	width: 60px; 
+	text-align: center;
+	position: absolute;
+	top: 300px;
+	left: 150px;
+	overflow-y: auto;
+	z-index: 1;
+}
+#revclick:hover
+{
+	background: linear-gradient(#6E89EF, lightblue);
+
+}
+.review{
+	display: none;
+	margin: 10px;
+	width: 380px;
+	height: 50px;
+	border: solid black 1px;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+#linkedin
+{
+	/*Will be used for positioning later*/
+	position: absolute;
+	top: 300px;
+	left: 220px;
+	
+}
+
+#dropav
+{
+	/*The availability 'BUTTON'*/
+	background: linear-gradient(lightblue,#6E89EF);
+	width: 200px;
+	box-shadow: 2px 2px #a0a0a0;
+	text-align: center;
+	text-shadow: 1px 1px grey;
+	border-radius: 30px;
+	padding: 10px;
+	color: blue;
+	position: absolute;
+	top: 100px;
+ 	left: 1000px;
+}
+
+#dropav:hover
+ {
+ 	background: linear-gradient(#6E89EF, lightblue);
+ 	font-size: 120%;
+
+ }
+
+ #availability
+ {
+ 	/*The availability TABLE*/
+
+ 	display: none;
+ 	padding: 5px;
+ 	background: none;
+ 	width: 200px;
+ 	border: lightblue 3px;
+ 	border-radius: 10px;
+ 	position: absolute;
+	top: 140px;
+ 	left: 1000px;
+ 	z-index: 1;
+ 	
+ }
+
+ 
+
+ 
+
+  .day
+ {
+ 	/* The days of the week that are seen first*/
+
+ 	color: black;
+ 	text-shadow: 1px 1px silver;
+ 	text-align: center;
+ 	background: linear-gradient(lightblue, #6E89EF);
+ 	border-radius: 10px;
+ 	box-shadow: 5px 5px #97A6AB
+ }
+.day:hover
+{
+    background: linear-gradient(#6E89EF, lightblue);
+    text-shadow: 1px 1px grey;
+    text-decoration: underline;
+}
+
+ .times
+ {
+ 	/*The times corresponding to a given day*/
+ 	width: 100px;
+ 	background: linear-gradient(lightblue, #6E89EF);
+ 	display: none;
+ 	text-align: center;
+
+ }
+
+
+  td{
+ 	background: linear-gradient(lightblue,#6E89EF);
+ 	padding: 8px;
+ 	border: grey solid 1px;
+ 	border-radius: 10px;
+ 	align-self: center;
+ 	box-shadow: 1px 1px grey;
+ }
+
+
+.dropdown, #aboutme,#education, #experience 
+ {
+ 	/* give the drop down buttons and the boxes  for AboutMe Edu. and Exp. the following stuff*/
+ 	width: 30%;
+    padding: 5px;
+    text-align: center;
+    background: linear-gradient(#5d8edd, #a0a0a0);#;
+    border: solid 1px #5d8edd;
+    border-radius: 5px;
+    box-shadow: 3px 3px #a0a0a0;
+    margin: 10px;
+    position: relative;
+}
+
+
+ .dropdown:hover
+ {
+ 	background: linear-gradient(#6E89EF, lightblue);
+ 	font-size: 120%;
+ }
+
+#grouped
+{
+	position: absolute;
+	top: 350px;
+	width: 1000px;
+}
+#aboutme {
+    padding: 80px;
+    display: none;
+    margin: 10px;
+    position: relative;
+    overflow-y: auto;
+    }
+#education {
+    padding: 80px;
+    display: none;
+    margin: 10px;
+    position: relative;
+    overflow-y: auto;
+}
+
+#experience {
+    padding: 80px;
+    margin: 10px;
+    display: none;
+    position: relative;
+    overflow-y: auto
+    
+}
+
+
+.vid
+{
+	
+	right: 120px;
+	bottom: 30px;
+	width: 600px;
+	height: 300px;
+	border-radius:10px;
+	border: solid black 3px;
+	position: absolute;
+	top: 300px;
+	left: 700px;
+
+}
+
