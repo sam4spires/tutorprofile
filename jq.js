@@ -10,7 +10,7 @@ $(document).ready(function(){
         
         else if(m=='moved'){
         $('#availability').toggle(1); m = '';
-        $('#wrapped').children().animate({left:"1000px",opacity:"1"},1000);}
+        $('#wrapped').children().animate({left:"1070px",opacity:"1"},1000);}
         
 	}
 
