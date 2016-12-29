@@ -262,16 +262,13 @@ body
     
 .vid
 {
-	
-	right: 120px;
-	bottom: 0px;
 	width: 600px;
 	height: 300px;
 	border-radius:10px;
 	border: solid grey 1px;
 	box-shadow: 2px 2px grey;
 	position: absolute;
-	top: 300px;
+	top: 330px;
 	left: 700px;
 
 }
