@@ -206,7 +206,7 @@ body
 
  }
 
- #wrapped > td{
+ .day > td {
  	background: linear-gradient(lightblue,#6E89EF);
  	padding: 8px;
  	border: grey solid 1px;
@@ -215,13 +215,7 @@ body
  	box-shadow: 1px 1px grey;
  }
 
- #timeday > 	span
- {
- 	height: 40px;
- 	width: 50px;
- 	border:black solid 1px;
- 	border-radius: 10px;
- }
+
 /* End of Availability Button */
 
 #grouped > *
