@@ -26,8 +26,9 @@
 <div id='subjects'>Subjects: <span id="sub1">Maths </span><span id="sub2">Physics</span></div>
 <div id='prices'>Prices</div>
 <table id='tabprices'>
-<tr><td>GCSE: </td><td>£21/hour</td></tr>
-<tr><td>A-level: </td><td>£X /hour</td></tr>
+<tr><td>GCSE: </td><td>£X/hour</td></tr>
+<tr><td>A-level: </td><td>£Y /hour</td></tr> 
+<!-- Might also want to extend this a bit with sub1 sub2 in case tutor sets different prices for different subjects-->
 </table>
 
 </div>
@@ -37,7 +38,7 @@
 
 <a href = './attachement1.pdf'  target="_blank"><div class='attach' id='attach1'></div></a>
 <a href = './attachement2.pdf'  target="_blank"><div class='attach' id='attach2'></div></a>
-<a id = 'messme' href='./message'><i class="material-icons">chat_bubble</i></a>
+<a id = 'messme' href='https://spires.co/tutor/messages'><i class="material-icons">chat_bubble</i></a>
 <!--Add tutor profile pic-->
 <img src='./images/tutpic.jpg' id='tutpic'>
 
@@ -58,44 +59,36 @@
 </div>
  
 
-<div id='wrapped'>
+
 <div id='dropav'>Availability</div>
 <table id='availability'>
+
 <!--The schedule the will be hidden until called-->
 <tr><td class='day' data-did='times1'>Monday</td></tr>
-<tr class='times' id='times1'>
-
-
 
 <tr><td class='day' data-did='times2'>Tuesday</td></tr>
-<tr class='times' id='times2'>
-
-
-
 
 <tr><td class='day' data-did='times3'>Wednesday</td></tr>
 
-<tr class='times' id='times3'>
-
-
-
 <tr><td class='day' data-did='times4'>Thursday</td></tr>
 
-<tr class='times' id='times4'>
 <tr><td class='day' data-did='times5'>Friday</td></tr>
 
-
-<tr class='times' id='times5'>
 <tr><td class='day' data-did='times6'>Saturday</td></tr>
 
-
-<tr class='times' id='times6'>
 <tr><td class='day' data-did='times7'>Sunday</td></tr>
-
-
-<tr class='times' id='times7'>
 </table>
 </div>
+
+<table id='times'>
+<tr><td class='times' id='times1'> 9:00-10:00, 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times2'> 9:00-10:00, 12:00-14:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times3'> 9:00-10:00, 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times4'> 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times5'> 10:00-12:00, 16:00-17:00, 20:00-21:00</td></tr>
+<tr><td class='times' id='times6'> 18:00-20:00</td></tr>
+<tr><td class='times' id='times1'> Unavailable </td></tr>
+</table>
 
 
 <!--End od availability table-->

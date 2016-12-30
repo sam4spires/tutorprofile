@@ -5,19 +5,20 @@ $(document).ready(function(){
 	function animation1()
 	{
 		if (m==''){
-		$('#wrapped').children().animate({left:"690px",opacity:"0.9"}, 1000) ;
-        $('#availability').toggle(1); m = 'moved';}
+		$('#dropav').animate({left:"690px",opacity:"0.5"}, 1000) ;
+        $('#availability').animate({left:"690px"},1000, function() {$('#times').show(1000)}).toggle(1); m = 'moved';}
         
         else if(m=='moved'){
         $('#availability').toggle(1); m = '';
-        $('#wrapped').children().animate({left:"1070px",opacity:"1"},1000);}
+        $('#dropav').animate({left:"1070px",opacity:"1"},1000); 
+    	$('#times').hide(1)}
         
 	}
 
 	function animation2()
 	{
   		if (m2==''){
-  		$(this).animate({left:"300px",top:"100px",opacity:"0.8", width: "400px",height:"500px"}, 1000 );
+  		$(this).animate({left:"300px",top:"100px",background:"rgba(173,216,230,0.5)", width: "400px",height:"500px"}, 1000 );
     	$(this).animate({fontSize:"2em"},1000); m2='moved';
     	$(".review").toggle()
     	}
@@ -31,11 +32,20 @@ $(document).ready(function(){
 			}
 
     	}
+    function animation3()
+    {
+    	daynum = $(this).attr('data-did')
+    	$('#times#'+daynum).toggle(1)
+    	$(this).toggleClass('dayclicked')
+    	
+ 	}
+    	
+    
 
     
      		
 	$("#dropav").on('click', animation1);
-	$(".day").on('click', function(){ $(this).animate({right:'100px'})})
+	$(".day").on('click', animation3);
     $("#revclick").on('click',animation2);
     $("#prices").on('click', function(){
     	$("#tabprices").toggle()})
