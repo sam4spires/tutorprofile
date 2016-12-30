@@ -1,6 +1,9 @@
-
+/*Positioned everything absolutely so that it's easier to shift around without affecting other things- 
+remember to change values in jQuery too if necessary otherwise things don't line up*/
 body
 {
+	/* background colour same as Spires */
+	/* Margins can be changed and added obviously, will certainly change once implemeneted on actual Spires website*/
 	background: #FAFAFA;
 	margin-top: 100px;
 	margin-left: 150px;
@@ -11,6 +14,7 @@ body
 	background:none;
 	position: absolute;
 	top: 100px;
+	/*Maybe photo should be a bit bigger?*/
 	width:180;
 	height:180px;
 	border: #79D1EE solid 3px;
@@ -19,6 +23,41 @@ body
 	margin: 10px;
 	
 }
+/* revclick is the element to click to view reviews, z-index 1 because otherwise it'll be hidden by other stuff */
+#revclick
+{
+	border: solid beige 1px; 
+	border-radius: 10px; 
+	background: linear-gradient(lightblue,#6E89EF); 
+	position: relative;
+	height: 22px;
+	width: 60px; 
+	text-align: center;
+	position: absolute;
+	top: 300px;
+	left: 160px;
+	overflow-y: auto;
+	z-index: 1;
+
+}
+#revclick:hover
+{
+	background: linear-gradient(#6E89EF, lightblue);
+
+}
+.review{
+	display: none;	
+	background-color: #c0c0c0;
+	margin: 10px;
+	width: 360px;
+	height: 50px;
+	border: solid black 1px;
+	border-radius: 10px;
+	overflow-y: auto;
+	
+}
+
+/* attachment elements which change colour when hovered over*/
 .attach
 {
 	height: 22px;
@@ -31,25 +70,25 @@ body
 {
 	background: grey;
 }
-
+/* lining up these elements*/
 #attach1
 {
 	position: absolute;
 	top: 300px;
-	left: 260px;
+	left: 230px;
 }
 #attach2
 {
 	position: absolute;
 	top: 300px;
-	left: 290px;
+	left: 260px;
 }
 #messme
 {
 	background: none;
 	position: absolute;
 	top: 300px;
-	left: 320px;
+	left: 290px;
 }
 
 
@@ -76,74 +115,30 @@ body
 	margin: 3px;
 	box-shadow: 1px 1px grey;
 }
+/* so that it's apparent you can click the words for prices and subjects*/
+
+#subjects > span:hover
+{
+	color: blue;
+	font-size: 20px
+}
 
 #prices:hover
 {
 	color: blue;
 	font-size: 20px
 }
-#subjects > span:hover
-{
-	color: blue;
-	font-size: 20px
 
-}
-
+/* initially hide table until prices is clicked*/
 #tabprices
 {
 	display: none;
-	z-index: 1;
 }
-
-
-#revclick
-{
-	border: solid beige 1px; 
-	border-radius: 10px; 
-	background: linear-gradient(lightblue,#6E89EF); 
-	position: relative;
-	height: 22px;
-	width: 60px; 
-	text-align: center;
-	position: absolute;
-	top: 300px;
-	left: 160px;
-	overflow-y: auto;
-	overflow-x: hidden;
-
-	z-index: 1;
-}
-#revclick:hover
-{
-	background: linear-gradient(#6E89EF, lightblue);
-
-}
-.review{
-	display: none;	
-	background-color: #c0c0c0;
-	margin: 10px;
-	width: 360px;
-	height: 50px;
-	border: solid black 1px;
-	border-radius: 10px;
-	overflow-y: auto;
-	z-index: 1;
-}
-
-#linkedin
-{
-	/*Will be used for positioning later*/
-	position: absolute;
-	top: 300px;
-	left: 230px;
-	
-}
-
 
 /* Start of Availability button*/
 #dropav
 {
-	/*The availability 'BUTTON'*/
+	
 	background: linear-gradient(lightblue,#6E89EF);
 	width: 200px;
 	box-shadow: 2px 2px #a0a0a0;
@@ -156,7 +151,7 @@ body
 	top: 130px;
  	left: 1070px;
 }
-
+/* So people know to click*/
 #dropav:hover
  {
  	background: linear-gradient(#6E89EF, lightblue);
@@ -199,6 +194,7 @@ body
     text-decoration: underline;
 
 }
+/* This is a class to be used with jQuery so that one a  day is selected, it stays selected*/
 .dayclicked
 {
 	color: black;
@@ -235,9 +231,10 @@ body
 
 /* End of Availability Button */
 
+/* Just styling the info section*/
 #grouped > *
  {
- 	/* give the drop down buttons and the boxes  for AboutMe Edu. and Exp. the following stuff*/
+ 	/* give all the drop down buttons and the boxes for AboutMe Edu. and Exp. the following style*/
  	width: 30%;
     padding: 5px;
     text-align: center;
@@ -262,6 +259,8 @@ body
 	top: 350px;
 	width: 1000px;
 }
+
+/* if writing overflows the box it creates a scroll bar instead. Can change auto to scroll if it's better*/
 #grouped > .dropped {
     padding: 80px;
     display: none;
