@@ -1,0 +1,109 @@
+<html>
+<head>
+<!--Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!--Use own CSS and jQuery-->
+<link rel="stylesheet" href="./style1.css">
+<script src='./jq.js'></script>
+
+<title> USERS profile </title><!-- use SQL to get tutor name, SELECT name FROM tutors-->
+<!--Add icon to title-->
+<link rel="icon" type="image/gif" href="./images/a1c74d6454056e858da827414a347da0-favicon.png">
+<!-- load glyphicons - only used once for message button -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+<!--Add tutor profile pic-->
+<img src='./images/tutpic.jpg' id='tutpic'>
+
+<!-- Sections just below profile picture: Reviews, attachment 1, attachment 2, messaging-->
+<!-- Reviews will be hidden then shown on clicking the div element - animated-->
+<div id='revclick'>Reviews
+<div class='review' id='rev1'> Review Number 1</div>
+<div class='review' id='rev2'> Review Number 2</div>
+<div class='review' id='rev3'> Review Number 3</div>
+<div class='review' id='rev4'> Review Number 4</div>
+<div class='review' id='rev5'> Review Number 5</div>
+<div class='review' id='rev6'> Review Number 6</div>
+<div class='review' id='rev7'> Review Number 7</div>
+<div class='review' id='rev8'> Review Number 8</div>
+<div class='review' id='rev9'> Review Number 9</div>
+<div class='review' id='rev10'> Review Number 10</div>
+</div>
+<!-- linkedIn now removed. Elements to link to the messaging section and two attachments for transcripts or CV etc. -->
+<a href = './attachement1.pdf'  target="_blank"><div class='attach' id='attach1'></div></a>
+<a href = './attachement2.pdf'  target="_blank"><div class='attach' id='attach2'></div></a>
+<a id = 'messme' href='https://spires.co/tutor/messages'><i class="material-icons">chat_bubble</i></a>
+
+<!-- Create general information element - here will go Name Highest Education Prices etc will need to be pulled from database SELECT geninfo FROM tutor WHERE tutor="Sam"-->
+<div class='geninfo'>
+<div id='name'>Name: Sam Georgiou</div>
+<div id='highested'>Education: MMath at Durham</div>
+<div id='subjects'>Subjects: <span id="sub1">Maths </span><span id="sub2">Physics</span></div><!-- using span to give id so that page can be toggled from subject to subject-->
+<div id='prices'>Prices</div>
+
+<!-- Price table-->
+<table id='tabprices'>
+<tr><td>GCSE: </td><td>£X/hour</td></tr>
+<tr><td>A-level: </td><td>£Y /hour</td></tr> 
+<!-- Might also want to extend this a bit with sub1 sub2 in case tutor sets different prices for different subjects-->
+</table>
+
+</div>
+
+
+
+<!-- The Availability Dropdown Menu-->
+<!-- dropav will be the visible element on the page, the table availability will be hidden until dropav is clicked-->
+ 
+
+<div id='dropav'>Availability</div>
+
+<table id='availability'>
+
+<tr><td class='day' data-did='times1'>Monday</td></tr>
+<tr><td class='day' data-did='times2'>Tuesday</td></tr>
+<tr><td class='day' data-did='times3'>Wednesday</td></tr>
+<tr><td class='day' data-did='times4'>Thursday</td></tr>
+<tr><td class='day' data-did='times5'>Friday</td></tr>
+<tr><td class='day' data-did='times6'>Saturday</td></tr>
+<tr><td class='day' data-did='times7'>Sunday</td></tr>
+
+</table>
+
+</div>
+<!-- Another table for the times a tutor is available-->
+<table id='times'>
+<!--Made up times. Again, this would need to be pulled from SQL database-->
+<tr><td class='times' id='times1'> 9:00-10:00, 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times2'> 9:00-10:00, 12:00-14:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times3'> 9:00-10:00, 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times4'> 13:00-15:00, 17:00-20:00</td></tr>
+<tr><td class='times' id='times5'> 10:00-12:00, 16:00-17:00, 20:00-21:00</td></tr>
+<tr><td class='times' id='times6'> 18:00-20:00</td></tr>
+<tr><td class='times' id='times7'> Unavailable </td></tr> <!-- Thought if the tutor doesn't enter anything we could use an if statement to give the value "Unavailable" -->
+
+</table>
+
+<!--End of availability table-->
+
+<!-- Create elements for About Me, Education, and My Experience. Using the div 'grouped' just made the CSS neater.-->
+<div id="grouped">
+<div class='dropdown' data-dropid="aboutme">About Me</div>
+<div class = 'dropped' id="aboutme">Here is some text about me</div>
+<div class='dropdown' data-dropid="education">My Education</div>
+<div  class = 'dropped' id="education">Here is some text about my education</div>
+<div class='dropdown' data-dropid="experience">My Experience</div>
+<div  class = 'dropped' id="experience" >Here is some text about my experience</div>
+</div>
+
+<!-- Include  the tutor's video, starts with video for subject 1, but value of src can be toggled with jQuery-->
+<iframe class='vid' src="https://www.youtube.com/embed/Gcby6WYAVKg" frameborder="0"allowfullscreen></iframe>
+
+
+</body>
+</html>
+
+
